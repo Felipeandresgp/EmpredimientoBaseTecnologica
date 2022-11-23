@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/js/uikit.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/js/uikit-icons.min.js"></script>
+
+   <!-- Font Awesome Icons -->
+   <script src="https://kit.fontawesome.com/9c325851d4.js" crossorigin="anonymous"></script>
+
+   <!-- CSS -->
+   <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="uk-container">
+                <div>
+                    <nav aria-label="Breadcrumb">
+                        <ul class="uk-breadcrumb">
+                            <li><a href="Login.html">Home</a></li>
+                            <li><a href="Inicio.html">Administrador</a></li>
+                            <li><span>Citas</span></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="uk-text-right">
+                    <p>Bienvenido(a) Alexandra Monzalve</p>
+                </div>
+                <div class="uk-text-right">
+                    <p><a href="Login.html">Cerrar Sesión <span uk-icon="icon: sign-out"></span></a></p>
+                </div>
+                <div uk-grid>
+                    <div class="uk-width-auto">
+                        <h2><i class="fa-solid fa-gears"></i> Gestión de citas</h2>
+                        <ul class="uk-nav uk-nav-default">
+                            <li><a href="Inicio.html">Inicio</a></li>
+                            <li class="uk-active"><a href="Citas.html"><i class="fa-solid fa-book"></i> Citas</a></li>
+                            <li><a href="Pacientes.html"><i class="fa-solid fa-users-gear"></i> Pacientes</a></li>
+                            <li><a href="Medicos.html"><i class="fa-solid fa-user-doctor"></i> Médicos</a></li>
+                            <li><a href="Areas-medicas.html"><i class="fa-solid fa-notes-medical"></i> Áreas Médicas</a></li>
+                            <li><a href="Horarios.html"><i class="fa-solid fa-calendar-days"></i> Horarios</a></li>
+                            <li><a href="Usuarios.html"><i class="fa-solid fa-users"></i> Usuarios</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-expand">
+                        <h2 class="uk-text-center">Citas</h2>
+                        <div class="uk-margin uk-text-right">
+                            <form class="uk-search uk-search-default">
+                                <span uk-search-icon></span>
+                                <input class="uk-search-input" type="search" placeholder="Buscar" aria-label="Search">
+                            </form>
+                        </div>
+                        <table class="uk-table uk-table-hover uk-table-divider">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Fecha</th>
+                                    <th>Hora</th>
+                                    <th>Paciente</th>
+                                    <th>Médico</th>
+                                    <th>Consultorio</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>001</td>
+                                    <td>22 de febrero de 2022</td>
+                                    <td>08:00 a. m. </td>
+                                    <td>Mari Varela</td>
+                                    <td>Diego Rodriguez</td>
+                                    <td>304</td>
+                                    <td>Ingresada</td>
+                                    <td><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                                    <td><a href="#"><i class="fa-solid fa-xmark"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>002</td>
+                                    <td>22 de febrero de 2022</td>
+                                    <td>08:00 a. m. </td>
+                                    <td>Fidela Gallo Barrio</td>
+                                    <td>Diego Rodriguez</td>
+                                    <td>304</td>
+                                    <td>Ingresada</td>
+                                    <td><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                                    <td><a href="#"><i class="fa-solid fa-xmark"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>003</td>
+                                    <td>22 de febrero de 2022</td>
+                                    <td>08:00 a. m. </td>
+                                    <td>Arcelia Viñas Mayol</td>
+                                    <td>Diego Rodriguez</td>
+                                    <td>304</td>
+                                    <td>Ingresada</td>
+                                    <td><a href="#"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                                    <td><a href="#"><i class="fa-solid fa-xmark"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="uk-margin" uk-grid>
+                            <div class="uk-width-1-2">
+                                <p><a class="uk-flex uk-flex-middle" href="#modal-center" uk-toggle><i class="fa-solid fa-circle-plus fa-3x"></i> Agregar Cita</a></p>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <p class="uk-text-right"><a href="#"><i class="fa-solid fa-file-export"></i> Exportar</a></p>
+                                <p class="uk-text-right"><a href="#"><i class="fa-solid fa-print"></i> Imprimir</a></p>
+                            </div>
+                        </div>
+                        <div id="modal-center" class="uk-flex-top" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <form class="uk-grid-small" uk-grid>
+                                    <div class="uk-width-1-2@s">
+                                        <label class="uk-form-label" for="form-stacked-text">Fecha</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="form-stacked-text" type="date" placeholder="Fecha">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2@s">
+                                        <label class="uk-form-label" for="form-stacked-text">Hora</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="form-stacked-text" type="time" placeholder="Hora">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2@s">
+                                        <label class="uk-form-label" for="form-stacked-text">Paciente</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="form-stacked-text" type="input" placeholder="Nombre paciente">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2@s">
+                                        <label class="uk-form-label" for="form-stacked-text">Médico</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="form-stacked-text" type="input" placeholder="Nombre médico">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2@s">
+                                        <label class="uk-form-label" for="form-stacked-text">Consultorio</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="form-stacked-text" type="input" placeholder="Consultorio">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2@s">
+                                        <label class="uk-form-label" for="form-stacked-text">Estado</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="form-stacked-text" type="input" placeholder="Estado">
+                                        </div>
+                                    </div>
+                                    <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

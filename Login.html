@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/js/uikit.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="uk-container uk-margin-top uk-margin-bottom">
+                <div class="uk-text-center">
+                    <h1>SISTEMA DE GESTIÓN DE CITAS MÉDICAS</h1>
+                </div>
+                <div uk-grid>
+                    <div class="uk-width-1-2">
+                        <div>
+                            <img src="assets/images/Online Doctor.png" alt="Online Doctor" width="60%">
+                            <h2>Contáctenos</h2>
+                            <p><span uk-icon="icon: mail"></span> subgrupo.aleatorio2@poligran.edu.co</p>
+                            <p><span uk-icon="icon: phone"></span> +57 (305) 123 45 67</p> 
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div class="uk-flex uk-flex-middle">
+                            <form class="uk-form-horizontal uk-padding-large" action="Inicio.html">
+                                <div class="uk-margin">
+                                    <div class="uk-form-label" for="form-horizontal-select">Seleccionar Rol</div>
+                                    <div class="uk-form-controls">
+                                        <select class="uk-select" required>
+                                            <option>Administrador</option>
+                                            <option>Médico</option>
+                                            <option>Paciente</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-horizontal-text">Usuario</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="form-horizontal-text" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-horizontal-text">Contraseña</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="form-horizontal-text" type="password" required>
+                                    </div>
+                                </div>
+                                <div class="uk-margin uk-text-center">
+                                    <p>¿Olvidó su contraseña?</p>
+                                </div>
+                                <div class="uk-margin uk-text-center">
+                                    <button uk-icon="icon: sign-in" class="uk-button uk-button-default" type="submit">Ingresar</button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+</body>
+</html>
